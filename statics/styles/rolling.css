@@ -1,0 +1,77 @@
+/* ===========================================
+   Slider Modules
+============================================ */
+.slider-wrap button{border:0;background-color:inherit}
+.slider-wrap, .cols-movie {overflow:hidden; width:100%;}
+.slider-wrap {height:450px;}
+.slider-wrap:before,
+.slider-wrap:after {position:absolute; top:0; z-index:10; content:''; width:14px; height:450px;}
+
+.cols-movie {height:388px;}
+
+.slider {overflow:hidden; position:relative; z-index:1; width:100%; height:100%;}
+.slider > button[type='button'] {position:absolute; background-image:url(../images/front/sprite/sprite_btn.png); background-repeat:no-repeat; font:0/0 a; zoom:1;}
+.slider > .btn-prev, 
+.slider > .btn-next, 
+.slider > .btn-prev.dim, 
+.slider > .btn-next.dim {overflow:hidden; top:50%; width:26px; height:52px; text-indent:100%; white-space:nowrap; margin-top:-26px;}
+.slider > .btn-prev {left:19px; background-position:0 -97px;}
+.slider > .btn-prev.dim {background-position:0 -155px;}
+.slider > .btn-next {right:19px; background-position:-30px -97px;}
+.slider > .btn-next.dim {background-position:-30px -155px;}
+/* .slider ul {clear:both;} */
+/* .slider li - item���� ��ü */
+
+.slider .item-wrap {display:inline-block; float:left;}
+*+html .slider .item-wrap {display:inline;}
+.slider button[type='button'] {z-index:20;}
+.slider button[type='button'].btn-pause, 
+.slider button[type='button'].btn-play, 
+.slider .item-wrap > button[type='button'] {overflow:hidden; position:absolute; top:415px; width:13px; height:13px; background:url(../images/front/sprite/sprite_icon.png) no-repeat 0 -90px; text-indent:100%; white-space:nowrap;}
+.slider .item-wrap button[type='button'].on {background-position:-16px -90px;}
+.slider .item-wrap > .item {position:absolute; z-index:5; text-align:center;}
+.slider .item-wrap.on > .item {z-index:10;}
+.slider .item-wrap.move > .item {z-index:15;}
+.slider .item-wrap.on > .item > a {display:block;}
+.slider .item-wrap > .item .ico-play {top:50%; left:50%; width:66px; height:66px; margin:-33px 0 0 -33px; background-position: -121px -21px;}
+
+/* .slider .item-wrap > button[type='button'] {display:none;} */
+.slider button[type='button'].btn-play {left:534px; background-position:-32px -90px;}
+.slider button[type='button'].btn-pause {left:551px; background-position:-48px -90px;}
+
+/* ���� ������ �����̴�  */
+.layer-wrap{ position:absolute; top:50%; left:50%; z-index:200;}
+.layer-contents{ width: 980px; height: 506px;}
+.layer-contents .slider{ overflow:visible;}
+.layer-contents	.slider button[type='button'].btn-next{ right:-40px;}
+.layer-contents	.slider button[type='button'].btn-prev{ left:-40px}
+.layer-contents	.slider .item{ position:absolute; display:inline-block; text-align:center; background:#000000; white-space:normal;}
+.layer-contents	.slider .item:before{ content:'';  display:inline-block; height:100%; vertical-align:middle;}
+.layer-contents	.slider .item img{ width:auto; height:auto; max-width:100%; max-height:100%;}
+*+html .layer-contents .slider .item{ background:none;}
+.layer-contents .slider + .btn-close{ top:-23px; right:40px;}
+/* ť������ �������������� �˾� */
+.wrap-audio{ position:relative; width:100%; height:100%; padding:15px 7px; background:#000000; }
+.wrap-audio > h5:first-child{ margin-bottom:10px; font-size:13px; color:#cccccc; padding:0;}
+.wrap-audio > .audio-contents{ width:340px; height:224px; border:1px solid #cccccc; }
+.wrap-audio > .audio-contents > p{ height:175px; background:url('../images/front/common/bg/bg_txt_sound.gif') 50% 50% no-repeat; font:0/0 a; zoom:1;}
+.wrap-audio > h5{ padding:15px 20px 10px; font-size:11px; color:#cccccc;}
+.wrap-audio > textarea { width:320px; height:130px; border:1px solid #4b4b4b; background:#000000; color:#cccccc; font-size:11px;}
+.wrap-audio + .btn-close { top:55px; right:20px;}
+
+
+.now-showing, .now-showing h4, .now-showing a.link-reservation {position:absolute;}
+.now-showing {bottom:0; z-index:20; width:733px; height:78px; background:url(../images/front/common/bg/bg_now_showing.png) no-repeat 0 0;}
+.now-showing h4 {top:32px; left:22px;}
+.now-showing dl {margin:19px 0 0 177px;}
+.now-showing dl dt {color:#fffdf1; font-family:NanumBarunGothicBold, sans-serif; font-size:15px;}
+.now-showing dl dt > a, .now-showing a.link-reservation {background-image:url(../images/front/sprite/sprite_btn.png); background-repeat:no-repeat;}
+.now-showing dl dt > a {overflow:hidden; display:inline-block; width:20px; height:19px; margin-left:10px; background-position:-50px -62px; text-indent:100%; white-space:nowrap;}
+.now-showing dl dd {margin-top:10px; color:#fffdf1; font-size:12px;}
+.now-showing a.link-reservation {display:block; width:62px; height:62px; top:8px; right:8px; background-position:-158px 0;}
+
+/* Movie Selection Slider Type */
+.cols-movie .col-slider {float:left; width:733px; height:388px;}
+.cols-movie .col-slider > iframe {width:733px; height:388px;}
+.cols-movie .col-ad {float:right; width:240px; height:388px;}
+.cols-movie .col-ad > iframe {width:240px; height:388px;}

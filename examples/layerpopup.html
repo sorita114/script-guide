@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Layer Popup - 샘플</title>
+<link rel="stylesheet" type="text/css" href="../css/front/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/front/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/front/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/front/board.css" />
+<link rel="stylesheet" type="text/css" href="../css/front/popup.css" />
+<link rel="stylesheet" type="text/css" href="../css/front/jquery-ui-1.10.1.custom.css" />
+
+<style>
+</style>
+</head>
+<body>
+<div>
+	<a href="javascript:;" data-trigger="layerpopup" data-target="#tpl_layer" title="레이어 팝업 열기">
+		<img src="../images/front/button/btnNear01.gif" alt="최근번호">
+	</a>
+</div>
+
+<script id="tpl_layer" type="text/template">
+<div class="wrap-layerpop">
+    <div class="sect-layerpop">
+        <div class="layerpop-contaniner" style="width:216px;">
+            <h2>최근회신번호</h2>
+            <div class="layerpop-contents">111</div>
+        </div>
+        <button class="btn-close"><img src="../images/front/button/btnPopClose.gif" alt="최근회신번호 레이어 팝업 닫기" /></button>
+    </div>
+</div>
+</script>
+<!-- <script type="text/javascript" src="../statics/scripts/jquery/jquery-1.11.2.min.js"></script> -->
+<!-- <script type="text/javascript" src="../statics/scripts/jquery/jquery-1.9.0.min.js"></script> -->
+<script type="text/javascript" src="../js/front/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/front/jquery/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/front/jquery/plugin/jquery.package.js"></script>
+</body>
+</html>

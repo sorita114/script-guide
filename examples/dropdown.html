@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>DropDwon - 샘플</title>
+<link href="../css/front/common.css" rel="stylesheet">
+<link href="../css/front/main.css" rel="stylesheet">
+<link href="../css/front/layout.css" rel="stylesheet">
+<style>
+	.family {top:100px;} // test 코드
+</style>
+</head>
+<body style="position:relative;padding:10px;background:#646465;">
+
+<div class="family">
+	<a href="javascript:;" class="dropdown" id="family">Family Site</a>
+	<ul>
+        <li><a href="http://www.uplusbox.co.kr" target="_blank" data-name="U+ Box">U+ Box</a></li>
+        <li><a href="http://www.webhard.co.kr" target="_blank" data-name="웹하드">웹하드</a></li>
+        <li><a href="http://www.smartsme.co.kr" target="_blank" data-name="U+ Smart SME">U+ Smart SME</a></li>
+    </ul>
+</div>
+<!-- <script type="text/javascript" src="../js/front/jquery/jquery-1.11.2.min.js"></script> -->
+<!-- <script type="text/javascript" src="../js/front/jquery/jquery-1.9.0.min.js"></script> -->
+<script type="text/javascript" src="../js/front/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/front/jquery/plugin/jquery.package.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#family').dropdown();
+});
+</script>
+</body>
+</html>

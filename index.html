@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>스크립트 가이드 > iot 엑세서리몰 > LG유플러스</title>
+
+        <!-- Bootstrap -->
+        <link href="statics/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="statics/bootstrap/css/bootstrap-addon.css" rel="stylesheet">
+        <link href="statics/prism/prism.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="statics/scripts/html5shiv.min.js"></script>
+
+        <![endif]-->
+    </head>
+    <body data-spy="scroll" >
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#top">LG유플러스 IOT 엑세서리몰 스크립트 가이드 - Demo</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#top">Demo</a></li>
+                        <li><a href="./documentation.html">Documentation</a></li>
+                    </ul>
+                    <!-- <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div id="sidebar" class="col-sm-3 col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li class="active">
+                            <a href="#overview">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#layer_popup">Layer Popup</a>
+                        </li>
+                        <li>
+                            <a href="#rolling">Rolling Contents</a>
+                        </li>
+                        <li>
+                            <a href="#validate">Form Validate</a>
+                        </li>
+                        <li>
+                            <a href="#dropdown">DropDown</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            		<h1 id="overview" class="page-header">* Overview</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+	                        <p class="text-info">
+	                        	웹 페이지 작성시 필요한 동적요소와 Interaction 요소에 대해 웹접근성을 준수하기 위한 Javascript 가이드를 제공합니다.
+	                        </p>
+	                        <p>
+	                        	가이드 항목 : <code>Layer popup</code>, <code>Rolling Contents</code>, <code>Form Validate</code>, <code>DropDown</code>
+	                        </p>
+	                        <p>
+	                            <small>* 본 문서는 <code>bootstrap</code> 으로 작성되었으며, 별도의 서버구성 없이 내용을 확인할 수 있습니다.</small>
+	                        </p>
+                        </div>
+                    </div>
+                    <div class="alert alert-success">
+                        <dl>
+                        	<dt>사용되는 파일</dt>
+                        	<dd>jquery.js (1.7.2+)</dd>
+                        	<dd>jquery.ui.js</dd>
+                        	<dd>jquery.package.js</dd>
+                        	<dd>jquery.validate.js</dd>
+                       	</dl>
+                       	<p>Global 참조 파일</p>
+                       	<pre>
+&lt;script type="text/javascript" src="../js/front/jquery/jquery.js">&lt;/script>
+&lt;script type="text/javascript" src="../js/front/jquery/jquery-ui/jquery-ui.js">&lt;/script>
+&lt;script type="text/javascript" src="../js/front/jquery/plugins/jquery.package.js">&lt;/script></pre>
+						<p>Locale 참조 파일</p>
+                       	<pre>
+&lt;script type="text/javascript" src="../js/front/jquery-validation/jquery.validate.js"&gt;&lt;/script&gt; &lt;!-- jquery validate 플러그인 파일. --&gt;
+&lt;script type="text/javascript" src="../js/front/jquery-validation/jquery.validate.init.js"&gt;&lt;/script&gt; &lt;!-- initialize 파일 : 경고 문구, 기본 설정 셋팅. --&gt;</pre>
+                       	<pre>
+- folder structure
+js/
+    front/
+	    jquery/
+		    plugins/
+			    jquery.package.js
+		    jquery-ui/
+			    jquery.ui.js
+		    jquery-validation/
+			    jquery.validate.js
+                            jquery.validate.init.js
+		jquery.js [ 버전별 ]
+</pre>
+<pre>
+- jQuery Object(jQuery DOM) : 일반적으로 jQuery 를 사용하면 return 되는 객체의 구조.
+
+var jdom = $('#[ELEMENT ID]');
+</pre>
+<pre>
+- jQuery Plugin : jQuery Object 에서 실행 가능한 확장 Method.
+
+$.fn.some = function () {
+	// 코드 작성.
+};
+</pre>
+<pre>
+- document.ready 작성.
+
+$(function() {
+
+});
+</pre>
+                    </div>
+                    <div class="guide-section">
+                        <h1 id="layer_popup" class="page-header">* Layer Popup</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p>Layer Popup 은<code>&lt;script type="text/template">...&lt;/script></code> 으로 구성된 <var>Template</var> 요소가 필요하다.</p>
+                                <pre>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/jquery.js">&lt;/script>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/plugins/jquery.package.js">&lt;/script></pre>
+                                <p class="text-warning"><strong>의존성 : </strong> jquery.js (1.7.2+), jquery.package.js, template element (text/template)</p>
+                            </div>
+                        </div>
+                        <h2>코드</h2>
+                        <pre class="line-numbers"><code class="language-markup">
+&lt;button type="button" data-trigger="layerpopup" data-target="#tpl_layer">레이어팝업 오픈&lt;/button>
+&lt;script type="text/template" id="tpl_layer">
+&lt;div class="wrap-layerpop">
+    &lt;div class="sect-layerpop">
+        &lt;div class="layerpop-contaniner">
+            &lt;h2>레이어 타이틀&lt;/h2>
+            &lt;div class="layerpop-contents">&lt;/div>
+        &lt;/div>
+        &lt;button class="btn-close">닫기&lt;/button>
+    &lt;/div>
+&lt;/div>
+&lt;/script></code></pre>
+                        <h2>샘플</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <iframe src="examples/layerpopup.html" title="tooltip 샘플"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide-section">
+                        <h1 id="rolling" class="page-header">* Rolling</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                            	<p>베너, 비쥬얼 영역의 컨텐츠 변환을 지원한다.</p>
+                            	<pre>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/jquery.js">&lt;/script>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/jquery-ui/jquery-ui.js">&lt;/script>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/plugins/jquery.package.js">&lt;/script></pre>
+                            	<p class="text-warning"><strong>의존성 : </strong> jquery.js (v1.7.2+), jquery.ui.js( v1.11.4 ), jquery.package.js </p>
+                            </div>
+                        </div>
+                        <h2>코드</h2>
+                        <pre class="line-numbers"><code class="language-markup">
+&lt;div class="slider-wrap">
+    &lt;div class="slider" id="still_motion">
+    	&lt;!-- play/paus button -->
+    	&lt;button type="button" class="btn-play">자동 넘기기 시작&lt;/button>
+        &lt;div class="item-wrap">
+        	&lt;!-- indecator -->
+        	&lt;button type="button">[첫번째 이미지 제목]&lt;/button>
+            &lt;div class="item">
+                &lt;img src="[첫번째 이미지 Url]" alt="[첫번째 이미지 설명]" />
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="item-wrap">
+        	&lt;!-- indecator -->
+        	&lt;button type="button">[두번째 이미지 제목]&lt;/button>
+            &lt;div class="item">
+                &lt;img src="[두번째 이미지 Url]" alt="[두번째 이미지 설명]" />
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="item-wrap">
+        	&lt;!-- indecator -->
+        	&lt;button type="button">[세번째 이미지 제목]&lt;/button>
+            &lt;div class="item">
+                &lt;img src="[세번째 이미지 Url]" alt="[세번째 이미지 설명]" />
+            &lt;/div>
+        &lt;/div>
+        &lt;!-- prev button -->
+        &lt;button type="button" class="btn-prev">이전 페이지 이동&lt;/button>
+        &lt;!-- next button -->
+        &lt;button type="button" class="btn-next">다음 페이지 이동&lt;/button>
+    &lt;/div>
+&lt;/div>
+&lt;!-- 썸네일 사용시-->
+&lt;div class="item-thumbnail-wrap">
+    &lt;ul>
+        &lt;li>
+            &lt;a href="#">&lt;img src="[ 썸네일 이미지 url ]" alt="[ 썸네일 이미지 설명 ]"/>&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href="#">&lt;img src="[ 썸네일 이미지 url ]" alt="[ 썸네일 이미지 설명 ]"/>&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href="#">&lt;img src="[ 썸네일 이미지 url ]" alt="[ 썸네일 이미지 설명 ]"/>&lt;/a>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+&lt;script type="text/javascript">
+	$('#mainNoticeSlider').visualMotion();
+&lt;/script></code></pre>
+                        <h2>샘플</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <iframe src="examples/rolling.html" title="contents rolling 샘플" style="height:400px;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section">
+						<h1 id="validate" class="page-header">* Form Validation</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p>Validation Check 가 필요한 경우, jquery.validate.js, jquery.validate.init.js 파일을 추가한다.</p>
+                               	<pre>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/jquery.js">&lt;/script>
+&lt;script type="text/javascript" src="../jquery.validate.js"&gt;&lt;/script&gt; &lt;!-- jquery validate 플러그인 파일. --&gt;
+&lt;script type="text/javascript" src="../jquery.validate.init.js"&gt;&lt;/script&gt; &lt;!-- initialize 파일 : 경고 문구, 기본 설정 셋팅. --&gt;</pre>
+								<p><code>Check 조건</code>은 각 <code>input</code> 의 <code>attribute</code>에 작성한다.</p>
+								<p><var>$('form').validate();</var> 를 실행한다. </p>
+								<p class="text-warning"><strong>의존성 : </strong> jquery.js (1.7.2+), jquery.validate.js (1.13.1), jquery.validate.init.js</p>
+								<p class="text-danger"><ins>input 요소에 name 값은 필수입니다.</ins></p>
+                            </div>
+                        </div>
+                        <h2 style="margin:0;">코드</h2>
+                        <pre class="line-numbers"><code class="language-markup">
+&lt;form>
+	&lt;input type="text" id="name" name="name" title="이름" required="required">
+	&lt;input type="text" id="email" name="email" title="이메일" required="required" email="email">
+	&lt;button type="submit">전송&lt;/button>
+&lt;/form>
+&lt;script type="text/javascript" src="../jquery.validate.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../jquery.validate.init.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript">
+	$('form').validate();
+&lt;/script></code></pre>
+
+                        <h2>샘플</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <iframe src="examples/validation.html" title="validation 샘플" style="height: 300px;"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="guide-section">
+                        <h1 id="dropdown" class="page-header">* Dropdown</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                            	<p>dropdown 을 사용하고자 하는 페이지에서 jquery.package.js 파일 참조를 추가한다.</p>
+                            	<pre>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/jquery.js">&lt;/script>
+&lt;script type="text/javascript" src="../statics/scripts/jquery/plugins/jquery.package.js">&lt;/script></pre>
+                            	<p class="text-warning"><strong>의존성 : </strong> jquery.js (1.7.2+), jquery.package.js</p>
+                            </div>
+                        </div>
+
+                        <h2>코드</h2>
+                        <pre class="line-numbers"><code class="language-markup">
+&lt;div class="family">
+	&lt;a href="javascript:;" id="family">Family Site&lt;/a>
+	&lt;ul>
+        &lt;li>&lt;a href="http://www.uplusbox.co.kr" target="_blank" title="새창으로 이동">U+ Box&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="http://www.webhard.co.kr" target="_blank" title="새창으로 이동">웹하드&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="http://www.smartsme.co.kr" target="_blank" title="새창으로 이동">U+ Smart SME&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+&lt;script type="text/javascript">
+	$('#family').dropdown();
+&lt;/script></code></pre>
+                        <h3>샘플</h3>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <iframe src="examples/dropdown.html" title="dropdown 샘플"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script type="text/javascript" src="statics/scripts/jquery/jquery-1.11.2.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="statics/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="statics/prism/prism.js"></script>
+        <script type="text/javascript" src="statics/scripts/init.js"></script>
+    </body>
+</html>

@@ -1,0 +1,321 @@
+@charset "euc-kr";
+/* CSS Document */
+
+.subVisu{position:relative;_border-bottom:1px solid #d5d5d5; padding-bottom:20px; }/*height:154px;margin-bottom:20px;border-bottom:1px solid #d5d5d5;background:url(../../images/front/common/subVisu01.gif) no-repeat right bottom*/
+.subTypeA .subVisu{}/*height:173px;margin-top:-35px;padding-bottom:20px;background:url(../../images/front/service/subVisu02.gif) no-repeat right top;*/
+.subTypeA .subVisu #location{padding-top:0px;}
+.subVisu #location{font-family: 'NanumGothic','���� ����', Malgun Gothic, '���� ����', sans-serif;font-size:11px; position:absolute; right:0; bottom:20px;}
+.subVisu h3,
+.subVisu > h3 + p {font-family: 'NanumGothic','���� ����', Malgun Gothic, '���� ����', sans-serif; font-weight:bold;}
+.subVisu h3 {margin:0px 0px 8px 0px; font-size:28px; line-height:28px;}
+.subVisu > h3 + p {color:#747474; font-size:14px; font-weight:normal; line-height:1.3;}
+
+
+
+/* 20130418 subvisual type Add */
+/*
+.subTypeB .subVisu{height:183px;background:url(../../images/front/service/subVisu03.gif) no-repeat right top;}
+.subTypeC .subVisu{height:183px;background:url(../../images/front/service/subVisu04.gif) no-repeat right top;}
+.subTypeD .subVisu{height:183px;background:url(../../images/front/service/subVisu05.gif) no-repeat right top;}
+.subTypeE .subVisu{height:183px;background:url(../../images/front/service/subVisu06.gif) no-repeat right top;}
+.subTypeF .subVisu{height:183px;background:url(../../images/front/service/subVisu07.gif) no-repeat right top;}
+.subTypeG .subVisu{height:183px;background:url(../../images/front/service/subVisu08.gif) no-repeat right top;}
+.subTypeH .subVisu{height:183px;background:url(../../images/front/service/subVisu09.gif) no-repeat right top;}
+.subTypeI .subVisu{height:183px;background:url(../../images/front/service/subVisu10.gif) no-repeat right top;}
+*/
+/*�������� ���� css MZ ����*/
+.boxWrap{position:relative;padding-top:15px;margin-bottom:20px;background:url(../../images/front/sms/bgBoxB.gif) no-repeat left top; overflow:hidden;}
+.boxWrap .inner{padding:0 15px 15px;background:url(../../images/front/sms/bgBoxB.gif) no-repeat left bottom}
+.boxWrap .inner li {display:none; padding:3px 10px;color:#747474;background:url(../../images/front/sms/bgDot.gif) no-repeat left 9px;}
+.boxWrap .inner li:first-child{display:block;}
+.boxWrap .btn{position:absolute;right:15px;bottom:15px;}
+.boxWrapA{padding-top:15px;margin:20px 0;background:url(../../images/front/sms/bgBoxA.gif) no-repeat left top;overflow:hidden;}
+.boxWrapA .inner{padding:0 20px 15px;background:url(../../images/front/sms/bgBoxA.gif) no-repeat left bottom}
+.boxWrapA .inner h4 {font-size:14px;}
+.boxWrapA .inner ul {margin:5px 0 15px;}
+.boxWrapA .inner li {display:none; padding-left:10px;margin:5px 0;background:url(../../images/front/sms/bgDot.gif) no-repeat left 7px; line-height:1.4;}
+.boxWrapA .inner li:first-child{display:block;}
+/*�������� ���� css MZ ��*/
+
+.boxWrap2{position:relative;padding-top:15px;margin-bottom:20px;background:url(../../images/front/sms/bgBoxB.gif) no-repeat left top}
+.boxWrap2 .inner{padding:0 15px 15px;background:url(../../images/front/sms/bgBoxB.gif) no-repeat left bottom}
+.boxWrap2 .inner li{padding:3px 10px;color:#747474;background:url(../../images/front/sms/bgDot.gif) no-repeat left 9px;}
+.boxWrap2 .inner .alertTit{margin:3px 0;padding-left:25px;color:#505050;background:url(../../images/front/sms/bgDot02.gif) no-repeat left 2px; font-weight:bold;}
+.boxWrap2 .inner b{font-weight:normal; color:#ec75b6;}
+.boxWrap2 .btn{position:absolute;right:15px;bottom:15px;}
+
+/* ���� ���� ����0821
+.boxWrap{position:relative;padding-top:15px;margin-bottom:20px;background:url(../../images/front/sms/bgBoxB.gif) no-repeat left top}
+.boxWrap .inner{padding:0 15px 15px;background:url(../../images/front/sms/bgBoxB.gif) no-repeat left bottom}
+.boxWrap .inner li{padding:3px 10px;color:#747474;background:url(../../images/front/sms/bgDot.gif) no-repeat left 9px;}
+.boxWrap .btn{position:absolute;right:15px;bottom:15px;}
+
+.boxWrapA{padding-top:15px;margin:20px 0;background:url(../../images/front/sms/bgBoxA.gif) no-repeat left top}
+.boxWrapA .inner{padding:0 20px 15px;background:url(../../images/front/sms/bgBoxA.gif) no-repeat left bottom}
+.boxWrapA .inner li{padding-left:10px;margin:5px 0;background:url(../../images/front/sms/bgDot.gif) no-repeat left 7px;}
+*/
+/* smsWrap */
+.smsWrap .inputBox textarea{border:0px;overflow:hidden}
+.smsWrap{margin-bottom:20px; *zoom:1}/* border - ����  130715*/
+.smsWrap .smsSend{float:left;height:413px;width:250px;background:url(../../images/front/sms/bgPhone.gif) no-repeat left top;}
+.smsWrapmailMg .smsSend .inner{padding:100px 20px;}
+.smsSend .inner .inputBox{margin:0 14px 0 29px;height:130px;*padding:0 20px;}
+.smsSend .inner .inputBox .msgInput{width:148px;height:100px;}/*overflow-y:scroll*/
+.smsSend .inner .inputBox .right{display:block;margin-top:15px;}
+/*.smsWrap .inner .mailMg{position:relative;padding-right:20px;margin-top:5px;text-align:right}
+.smsWrap .inner .mailMg .spchBub{position:absolute;top:-90px;right:10px;padding:13px 13px 40px;color:#fff;font-size:11px;font-family: 'NanumGothic','���� ����', Malgun Gothic, '���� ����', sans-serif;background:url(../../images/front/sms/bgLayer01.png) no-repeat left top;}*/
+
+.smsWrap .inner .mailMg{position:relative;padding-right:20px;margin:5px 0;text-align:right}
+.smsWrap .inner .mailMg .spchBub,
+.smsWrap .inner .mailMg .spchBub01 {position:absolute; right:10px; color:#fff; font-size:11px; background:url(../../images/front/sms/bgLayer01.png) no-repeat left top; line-height:1.2; text-align:left;}
+.smsWrap .inner .mailMg .spchBub {top:-95px; padding:13px 13px 30px;}
+.smsWrap .inner .mailMg .spchBub01 {top:-91px; padding:13px 5px 30px; letter-spacing:-1px;}
+
+.smsSend .inner .btnArea{margin-top:24px;text-align:center;}
+.smsSend .inner .inputWrap{hegiht:30x;margin-top:10px;background:url(../../images/front/sms/bgSmsInput.gif) no-repeat left top;}
+.smsSend .inner .inputWrap input{border:0px;width:186px;padding:8px 12px;color:#b5b5b5;background-color:transparent}
+body.ie8 .smsSend .inner .inputWrap input{padding:9px 12px;}
+.smsSend .inner .txtBtnArea{width:195px;margin:20px auto;font:13px Gulim;text-align:center;font-weight:bold;}
+.smsSend .inner .txtBtnArea a{display:inline-block;float:left;width:56px;height:14px;padding:3px 16px;color:#505050;background:url(../../images/front/sms/bgBar.gif) no-repeat left center}
+.smsSend .inner .txtBtnArea a:first-child{margin-left:-10px;width:75px;background-image:none;}
+.smsWrap:after{content:"";display:block;clear:both;}
+
+/* smsSend smsSendAdd */
+.smsWrap .smsSendAdd{float:left;height:572px;width:250px;background:url(../../images/front/sms/bgPhoneAdd.gif) no-repeat left top;}
+.smsSendAdd .inner{padding:100px 20px;}
+.smsSendAdd .inner .inputBox{position:relative;margin:0 14px 0 29px;height:130px;*padding:0 20px;}
+.smsSendAdd .inner .inputBox .msgInput{width:148px;height:100px;overflow:hidden}
+.smsSendAdd .inner .inputBox .right{display:block;margin-top:15px;}
+.smsSendAdd .inner .inputBox .msgInputAdd{width:148px;height:100px;overflow:hidden;margin-top:25px;}
+.smsSendAdd .inner .inputBox .right.add{margin-top:30px;}
+.smsSendAdd .inner .inputBox a{position:absolute;top:130px;}
+.smsSendAdd .inner .btnArea{margin-top:40px;text-align:center;}
+.smsSendAdd .inner .inputWrap{text-align:center;hegiht:30x;margin-top:10px;background:url(../../images/front/sms/bgSmsInput.gif) no-repeat center center;}
+.smsSendAdd .inner .inputWrap input{border:0px;width:145px;padding:8px 10px;color:#b5b5b5;background-color:transparent}
+body.ie8 .smsSendAdd .inner .inputWrap input{padding:9px 12px;}
+.smsSendAdd .inner .txtBtnArea{width:195px;margin:20px auto;font:13px Gulim;text-align:center;font-weight:bold;}
+.smsSendAdd .inner .txtBtnArea a{display:inline-block;float:left;width:56px;height:14px;padding:3px 16px;color:#505050;background:url(../../images/front/sms/bgBar.gif) no-repeat left center}
+.smsSendAdd .inner .txtBtnArea a.bgclear{width:85px;}
+.smsSendAdd .inner .txtBtnArea a:first-child{margin-left:-10px;width:75px;background-image:none;}
+.smsWrap:after{content:"";display:block;clear:both;}
+
+/* smsSendWrap 20130310*/
+.smsSendWrap{float:left;width:250px;}
+.smsSendWrap .innerTop{padding-top:53px;background:url(../../images/front/sms/bgPhoneTop.gif) no-repeat left top}
+.smsSendWrap .innerTop .inner{background:url(../../images/front/sms/bgPhoneBody.gif) repeat-y left top}
+.smsSendWrap .innerTop .inputBox{haight:155px;padding:40px 35px 20px 45px;background:url(../../images/front/sms/bgSmsInputA.gif) no-repeat left top}
+.smsSendWrap .innerTop .inputBox span{display:block;margin-top:10px;text-align:right;}
+.smsSendWrap .innerTop .addInputBox{margin-top:-4px;*margin-top:-8px;padding-left:20px; }
+.smsSendWrap .innerTop .addInputBox .addInner{position:relative;width:150px;padding:25px 35px 20px 25px;margin:0 atuo; background:url(../../images/front/sms/bgSmsInputAdd.gif) no-repeat left top}
+.smsSendWrap .innerTop .addInputBox span{display:block;width:170px;margin-top:10px;text-align:right;}
+.smsSendWrap .innerTop .addInputBox .btnDelet{position:absolute;bottom:20px;left:25px;}
+.smsSendWrap .innerTop .inputWrap{width:210px;hegiht:30x;margin:10px auto 0;background:url(../../images/front/sms/bgSmsInput.gif) no-repeat center top;}
+.smsSendWrap .innerTop .inputWrap input{border:0px;width:186px;padding:8px 12px;color:#b5b5b5;background-color:transparent}
+.smsSendWrap .innerTop .txtBtnArea{height:83px;padding-top:20px;text-align:center;background:url(../../images/front/sms/bgPhoneBottom.gif) no-repeat left bottom;}
+.smsSendWrap .innerTop .txtBtnArea .inner{width:195px;margin:0 auto;background-image:none;}
+.smsSendWrap .innerTop .txtBtnArea a{display:inline-block;float:left;width:74px;height:14px;padding:0 10px;color:#505050;font:13px Gulim;text-align:center;font-weight:bold;background:url(../../images/front/sms/bgBar.gif) no-repeat left center}
+.smsSendWrap .innerTop .txtBtnArea a:first-child{width:80px;background-image:none;}
+.smsSendWrap  textarea{width:165px;height:110px;overflow-y:scroll;border:0px}
+
+/* lmsWrap (�Ϲ�) */
+.smsWrap .lmsSend_new .lms{float:left;height:610px;width:250px;background:url(../../images/front/sms/bgPhoneHi_LMS_131126.gif) no-repeat left top;}
+.smsWrap .lmsSend_new .mms{float:left;height:610px;width:250px;background:url(../../images/front/sms/bgPhoneHi_MMS_131126.gif) no-repeat left top;}
+.lmsSend_new .inner{padding:86px 5px;}
+.lmsSend_new .inner .inputBox{padding:0 14px 0 29px;}
+.lmsSend_new .inner .inputBox .msgInput{display:block;width:181px;height:235px;}
+.lmsSend_new .inner .inputBox .msgInputMMS{display:block;width:181px;height:210px;}
+.lmsSend_new .inner .inputBox .msgInputMMS1{display:block;width:181px;height:110px;}
+.lmsSend_new .inner .inputBox .msgInputMMS2{display:block;width:181px;height:110px;}
+/*ody.ie7 .lmsSend_new .inner .inputBox .msgInput textarea{margin-left:-25px;}*/
+.lmsSend_new .inner .inputBox .gpoint{display:block;margin-top:8px;color:#747474;}
+.lmsSend_new .inner .inputBox .right{display:block;width:181px;margin-top:30px;}
+.lmsSend_new .inner .inputBox .right2{display:block;width:181px;margin-top:20px;text-align:right;}
+.lmsSend_new .inner .inputWrap{hegiht:30x;margin-top:10px;background:url(../../images/front/sms/bgSmsInput.gif) no-repeat center top;}
+.lmsSend_new .inner .inputWrap input{border:0px;width:186px;padding:8px 24px;color:#b5b5b5;background-color:transparent}
+body.ie8 .lmsSend_new .inner .inputWrap input{margin-left:10px;padding:9px 10px;}
+.lmsSend_new .inner .btnArea{margin-top:14px;text-align:center;}
+.lmsSend_new .inner .btnArea a img{margin:2px 0}
+.lmsSend_new .inner .txtBtnArea{width:195px;margin:20px 20px 20px 15px;font-size:13px;font-family:"����", Gulim;text-align:center;font-weight:bold;}
+.lmsSend_new .inner .txtBtnArea a{display:inline-block;float:left;width:60px;height:14px;padding:3px 16px;color:#505050;background:url(../../images/front/sms/bgBar.gif) no-repeat left center}
+.lmsSend_new .inner .txtBtnArea a:first-child{margin-left:-5px;width:75px;background-image:none;}
+.lmsWrap:after{content:"";display:block;clear:both;}
+
+.lmsSend_new.lmsLSend .inputBox .right{margin-top:25px;}
+.lmsSend_new.lmsLSend p.btnArea a{margin-bottom:3px;}
+.lmsSend_new.lmsLSend .inner .inputWrap{margin-top:2px}
+.lmsSend_new.lmsLSend .txtBtnArea{margin-top:5px;}
+
+/* lmsWrap (�뷮) */
+.smsWrap .lmsSend{float:left;height:610px;width:250px;background:url(../../images/front/sms/bgPhoneHi.gif) no-repeat left top;}
+.lmsSend .inner{padding:86px 5px;}
+.lmsSend .inner .inputBox{padding:0 14px 0 29px;}
+.lmsSend .inner .inputBox .msgInput{display:block;width:181px;height:270px;}
+/*ody.ie7 .lmsSend .inner .inputBox .msgInput textarea{margin-left:-25px;}*/
+.lmsSend .inner .inputBox .gpoint{display:block;margin-top:8px;color:#747474;}
+.lmsSend .inner .inputBox .right{display:block;width:181px;margin-top:30px;}
+.lmsSend .inner .inputWrap{hegiht:30x;margin-top:10px;background:url(../../images/front/sms/bgSmsInput.gif) no-repeat center top;}
+.lmsSend .inner .inputWrap input{border:0px;width:186px;padding:8px 24px;color:#b5b5b5;background-color:transparent}
+body.ie8 .lmsSend .inner .inputWrap input{margin-left:10px;padding:9px 10px;}
+.lmsSend .inner .btnArea {margin-top:20px;text-align:center;}
+.lmsSend .inner .btnArea a img{margin:2px 0}
+.lmsSend .inner .txtBtnArea{width:195px;margin:20px 20px 20px 15px;font-size:13px;font-family:"����", Gulim;text-align:center;font-weight:bold;}
+.lmsSend .inner .txtBtnArea a{display:inline-block;float:left;width:60px;height:14px;padding:3px 16px;color:#505050;background:url(../../images/front/sms/bgBar.gif) no-repeat left center}
+.lmsSend .inner .txtBtnArea a:first-child{margin-left:-5px;width:75px;background-image:none;}
+.lmsWrap:after{content:"";display:block;clear:both;}
+
+.lmsSend.lmsLSend .inputBox .right{margin-top:25px;}
+.lmsSend.lmsLSend p.btnArea a{margin-bottom:3px;}
+.lmsSend.lmsLSend .inner .inputWrap{margin-top:2px}
+.lmsSend.lmsLSend .txtBtnArea{margin-top:5px;}
+
+/* phoneM */
+.smsWrap .phoneM{float:left;height:536px;width:250px;background:url(../../images/front/sms/bgPhoneM_CallbackURL.gif) no-repeat left top;}
+.phoneM .inner{padding:86px 5px;}
+.phoneM .inner .inputBox{margin:0 14px 0 29px;*padding:0 20px;*margin-left:10px;}
+.phoneM .inner .inputBox .msgInput{width:181px;height:165px;overflow:hidden}
+.phoneM .inner .inputBox .msgInput .urlInput{height:52px;padding:10px;margin-bottom:20px;border:1px solid #d5d5d5}
+.phoneM .inner .inputBox .gpoint{display:block;margin-top:8px;color:#747474;}
+.phoneM .inner .inputBox .right{display:block;width:181px;margin-top:30px;}
+.phoneM .inner .inputWrap{hegiht:30x;margin-top:10px;background:url(../../images/front/sms/bgSmsInput.gif) no-repeat center top;}
+.phoneM .inner .inputWrap input{border:0px;width:186px;padding:8px 24px;color:#b5b5b5;background-color:transparent}
+body.ie8 .phoneM .inner .inputWrap{}
+body.ie8 .phoneM .inner .inputWrap input{margin-left:10px;padding:9px 10px;}
+.phoneM .inner .btnArea{margin-top:20px;text-align:center;}
+.phoneM .inner .txtBtnArea{width:195px;margin:20px 20px 20px 15px;font:13px Gulim;text-align:center;font-weight:bold;}
+.phoneM .inner .txtBtnArea a{display:inline-block;float:left;width:60px;height:14px;padding:3px 16px;color:#505050;background:url(../../images/front/sms/bgBar.gif) no-repeat left center}
+.phoneM .inner .txtBtnArea a:first-child{margin-left:-5px;width:75px;background-image:none;}
+.phoneM:after{content:"";display:block;clear:both;}
+
+/* 20130402 */
+.smsWrap .phoneM.bigPhoneM{background:url(../../images/front/sms/bgPhoneMA.gif) no-repeat left top}
+.smsWrap .lmsSend.bigLmsSend,
+.smsWrap .lmsSend.lmsLSend.bigLmsLSend{background:url(../../images/front/sms/bgPhoneLA.gif) no-repeat left top}
+.smsWrap .lmsSend.bigLmsSend .inner .btnArea,
+.smsWrap .lmsSend.lmsLSend.bigLmsLSend .inner .btnArea{margin-top:20px}
+.smsWrap .lmsSend.bigLmsSend .inner .inputBox span.right,
+.smsWrap .lmsSend.lmsLSend.bigLmsLSend .inner .inputBox span.right{margin-top:0px;}
+.smsWrap .lmsSend.lmsLSend.bigLmsLSend .inner .txtBtnArea{margin-top:10px}
+
+/* addressWrap */ /* 130715 ���� */
+.addressWrap{float:right;width:510px;height:520px; margin-bottom:15px; background:url(../../images/front/sms/boxB.gif) no-repeat right top;}
+.addressWrap:after{content:"";display:block;clear:both;}
+.addressWrap .floatL{width:250px;}
+.addressWrap .floatL .title{padding:15px;text-align:center;font-weight:bold;}
+.addressWrap .floatL .inner{padding:15px;}
+.addressWrap .floatL .topArea{margin-bottom:10px;*zoom:1}
+.addressWrap .floatL .topArea .btnAddressListL{float:left;}
+.addressWrap .floatL .topArea .btnAddressListR{float:right;}
+.addressWrap .floatL .topArea:after{content:"";display:block;clear:both;}
+.addressWrap .floatL .inner .inputPnum{width:197px;height:65px; margin-top:10px; padding:10px;border:1px solid #d5d5d5;border-radius:1px;overflow-y:scroll;background-color:#fff;}
+.addressWrap .floatL .inner .inputPnum li .inputText{width:150px;padding:0 2px;border:0px;}
+.addressWrap .floatL .center{margin:10px 0}
+.addressWrap .floatL .btnArea{position:relative;margin:5px 0 15px;font-size:11px;line-height:16px;font-family:Dotum,"����";*zoom:1}
+.addressWrap .floatL .btnArea .guide {margin-left:60px; color:#666;}
+.addressWrap .floatL .inner .nearNum{margin-top:10px;border:1px solid #c5c5c5;border-width:1px 0 1px 1px;border-radiul:2px;background-color:#fff;*zoom:1}
+.addressWrap .floatL .inner .nearNum .inputText{float:left;width:148px;padding:4px;border:1px solid #f0f0f0;border-width:1px 0 0 0;color:#818181;}
+.addressWrap .floatL .inner .nearNum .btn{display:inline-block;float:right;width:60px;height:28px;vertical-align:middle;color:#616161;line-height:28px;text-align:center;}
+.addressWrap .floatL .inner .nearNum:after{content:"";display:block;clear:both;}
+
+.addressWrap .floatR{width:258px;}
+.addressWrap .floatR .innerWrap{padding:25px 17px;letter-spacing:-1px;}
+.addressWrap .floatR .innerWrap .inner{padding-bottom:20px;margin-bottom:25px;border-bottom:1px dotted #c5c5c5;}
+.addressWrap .floatR .innerWrap .inputText{padding:0 7px;}
+.addressWrap .floatR .innerWrap h4{margin-bottom:10px;}
+.addressWrap .floatR .innerWrap h4 .inputCheck{margin:-3px 7px 0 0;}
+.addressWrap .floatR .innerWrap .dateSelectWrap{position:relative;width:223px;height:16px;padding:3px 0;margin-top:10px;border:1px solid #c5c5c5}
+.addressWrap .floatR .innerWrap .dateSelectWrap .inputText{width:205px;border:0px;*height:15px;background:url(../../images/front/sms/icoDate.gif) no-repeat right 3px; cursor:pointer}
+.addressWrap .floatR .innerWrap .dateSelectWrap {}
+.addressWrap .floatR .innerWrap .dateSelectWrap .calender{position:absolute;right:7px;top:5px;}
+.addressWrap .floatR .innerWrap .inner .timeWrap {margin-top:6px; line-height:22px; text-aling:center;*zoom:1;}
+.addressWrap .floatR .innerWrap .inner .timeWrap .inputSelect {display:inline-block; width:107px;margin-right:3px;letter-spacing:0;}
+.addressWrap .floatR .innerWrap .inner .timeWrap .inputSelect.end {margin-right:-1px; border-bottom:1px solid #c5c5c5;}
+.addressWrap .floatR .innerWrap .inner .timeWrap:after{content:"";display:block;clear:both;}
+.addressWrap .floatR .inner .nearNum{*margin-top:-10px}
+.addressWrap .floatR .innerWrap .inner ul.guide{margin-top:15px;font-size:11px;font-family:Dotum,"����";}
+.addressWrap .floatR .innerWrap .inner ul.guide li{padding-left:8px;margin-bottom:10px;background:url(../../images/front/sms/bgDot.gif) no-repeat left 6px;}
+.addressWrap .floatR .innerWrap .end{border-bottom:0px;}
+.addressWrap .center{clear:both;}
+
+/* content boxPopA */
+#content .boxPopA{margin-top:20px;}
+#content .boxPopA .boxAInner .itemGroup{width:660px;}
+#content .boxPopA .boxAInner .itemGroup a{margin:0 1px}
+#content .boxPopA .boxAInner .itemGroup p{margin:1px 0}
+
+/* request */
+.requestWrap {overflow:hidden;}
+.requestWrap h4 {margin-top:30px;}
+.requestWrap .requestTextArea {max-height:120px; margin:10px 0 5px; padding:15px; overflow-y:auto; border:1px solid #c5c5c5;}
+.requestWrap .requestTextArea div,
+.requestWrap .requestTextArea p,
+.requestWrap .requestTextArea h5,
+.requestWrap .requestTextArea h6{margin-bottom:20px;font-weight:normal;}
+.requestWrap .requestTextArea ol{margin-top:15px;padding-left:20px;}
+.requestWrap .requestTextArea ol > li{margin:4px 0;letter-spacing:-0.3px;list-style-type:decimal}
+.requestWrap .requestTextArea ol > li > ul > li{margin:10px 0;}
+.requestWrap .requestTextArea ol > li > ul > li > ul >li{padding-left:15px;margin:5px 0;}
+.requestWrap .requestTextArea ol > li > ol > li{list-style-type:}
+.requestWrap .requestCheckArea {margin:30px 0; text-align:center;}
+.requestWrap .requestCheckArea span {margin-right:15px;}
+
+/* layerPopup */
+.smsMailMerge,.cbMailMerge,.lmsMailMerge,.mmsMailMerge{position:absolute;left:55%;width:320px;height:173px;background:#fff;}
+
+.smsMailMerge{top:715px;}
+.cbMailMerge{top:780px;}
+.lmsMailMerge{top:880px;}
+.mmsMailMerge{top:910px;}
+
+body.ie9 .smsMailMerge{left:55%;top:715px;}
+body.ie9 .cbMailMerge{left:55%;top:780px;}
+body.ie9 .lmsMailMerge{left:55%;top:880px;}
+body.ie9 .mmsMailMerge{left:55%;top:910px;}
+
+/* addressWrap_old */
+.addressWrap_old{}
+.addressWrap_old:after{content:"";display:block;clear:both;}
+.addressWrap_old .floatL{width:250px;}
+.addressWrap_old .floatL .title{padding:15px;text-align:center;font-weight:bold;}
+.addressWrap_old .floatL .inner{padding:15px;}
+.addressWrap_old .floatL .topArea{margin-bottom:10px;*zoom:1}
+.addressWrap_old .floatL .topArea .btnAddressList{float:left;}
+.addressWrap_old .floatL .topArea:after{content:"";display:block;clear:both;}
+.addressWrap_old .floatL .inner .inputPnum{width:197px;height:65px;padding:10px;border:1px solid #d5d5d5;border-radius:1px;overflow-y:scroll;background-color:#fff;}
+.addressWrap_old .floatL .inner .inputPnum li .inputText{width:150px;padding:0 2px;border:0px;}
+.addressWrap_old .floatL .center{margin:5px 0}
+.addressWrap_old .floatL .btnArea{position:relative;margin:5px 0 10px;font-size:11px;line-height:16px;font-family:Dotum,"����";*zoom:1}
+.addressWrap_old .floatL .btnArea .guide{margin-left:60px;color:#909090}
+.addressWrap_old .floatL .inner .nearNum{margin-top:20px;border:1px solid #c5c5c5;border-width:1px 0 1px 1px;border-radiul:2px;background-color:#fff;*zoom:1}
+.addressWrap_old .floatL .inner .nearNum .inputText{float:left;width:148px;padding:4px;border:1px solid #f0f0f0;border-width:1px 0 0 0;color:#818181;}
+.addressWrap_old .floatL .inner .nearNum .btn{display:inline-block;float:right;width:60px;height:28px;vertical-align:middle;color:#616161;line-height:28px;text-align:center;}
+.addressWrap_old .floatL .inner .nearNum:after{content:"";display:block;clear:both;}
+
+.addressWrap_old .floatR{width:258px;}
+.addressWrap_old .floatR .innerWrap{padding:25px 17px;letter-spacing:-1px;}
+.addressWrap_old .floatR .innerWrap .inner{padding-bottom:10px;margin-bottom:25px;border-bottom:1px dotted #c5c5c5;}
+.addressWrap_old .floatR .innerWrap .inputText{padding:0 7px;}
+.addressWrap_old .floatR .innerWrap h4{margin-bottom:10px;}
+.addressWrap_old .floatR .innerWrap h4 .inputCheck{margin:5px 7px 0 0;}
+.addressWrap_old .floatR .innerWrap .dateSelectWrap{position:relative;width:223px;height:16px;padding:3px 0;margin-top:10px;border:1px solid #c5c5c5}
+.addressWrap_old .floatR .innerWrap .dateSelectWrap .inputText{width:205px;border:0px;*height:15px;background:url(../../images/front/sms/icoDate.gif) no-repeat right 3px; cursor:pointer}
+.addressWrap_old .floatR .innerWrap .dateSelectWrap {}
+.addressWrap_old .floatR .innerWrap .dateSelectWrap .calender{position:absolute;right:7px;top:5px;}
+.addressWrap_old .floatR .innerWrap .inner .timeWrap{margin-top:6px;text-aling:center;*zoom:1}
+.addressWrap_old .floatR .innerWrap .inner .timeWrap .inputSelect{display:inline-block;float:left;width:107px;margin-right:3px;letter-spacing:0}
+.addressWrap_old .floatR .innerWrap .inner .timeWrap .inputSelect.end{margin-right:-1px;float:right;border-bottom:1px solid #c5c5c5}
+.addressWrap_old .floatR .innerWrap .inner .timeWrap:after{content:"";display:block;clear:both;}
+.addressWrap_old .floatR .inner .nearNum{*margin-top:-10px}
+.addressWrap_old .floatR .innerWrap .inner ul.guide{margin-top:15px;font-size:11px;font-family:Dotum,"����";}
+.addressWrap_old .floatR .innerWrap .inner ul.guide li{padding-left:8px;margin-bottom:10px;background:url(../../images/front/sms/bgDot.gif) no-repeat left 6px;}
+.addressWrap_old .floatR .innerWrap .end{border-bottom:0px;}
+
+/* addressWrap_old */
+.boxPopBWrap .addressWrap_old{float:left;width:0px;margin-top:-10px;magin-left:10px;background-image:none;}
+.boxPopBWrap .addressWrap_old .search{margin-bottom:8px;}
+.boxPopBWrap .addressWrap_old .bbsLstBasic .bbsLstBasic table{table-layout:fixed}
+.boxPopBWrap .addressWrap_old .pageBtmWrap{position:relative;margin-top:10px;}
+.boxPopBWrap .addressWrap_old .pageBtmWrap .btn{position:absolute;top:0px;left:0px;}
+.boxPopBWrap .addressWrap_old .pageBtmWrap .page{margin:0px;padding:0 2px;text-align:right;}
+.boxPopBWrap .addressWrap_old .pageBtmWrap .page span{margin:0 5px;}
+.boxPopBWrap .addressWrap_old .pageBtmWrap p.guide{margin-top:20px;padding-left:25px;background:url(../../images/front/popup/bgico.gif) no-repeat left center;}
+.boxPopBWrap .addressWrap_old .inputText{text-align:center;}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Rolling - 샘플</title>
+<style>
+* {margin:0;padding:0;vertical-align:middle;}
+
+.slider {position:relative;}
+.slider button {font:0/0 a;border:0;background:none;}
+.slider .item-wrap button {position:absolute;bottom:10px;width:13px;height:13px;background:url(http://sms.uplus.co.kr/ver2/images/main/btnVisuOff.png) no-repeat 0 0;}
+.slider .item-wrap button.on {background:url(http://sms.uplus.co.kr/ver2/images/main/btnVisuOn.png) no-repeat 0 0;}
+.slider .btn-prev {position:absolute;top:50%;left:0;}
+.slider .btn-next {position:absolute;top:50%;right:0;}
+.slider .btn-play {position:absolute;bottom:10px;width:16px;height:16px;background:url(https://mms.uplus.co.kr/html/images/main/btnVisualControl.png) no-repeat 0px -20px;}
+.slider .btn-pause {position:absolute;bottom:10px;width:16px;height:16px;background:url(https://mms.uplus.co.kr/html/images/main/btnVisualControl.png) no-repeat 0px 0;}
+.slider-wrap .thumbnail-wrap { width:100%; overflow : hidden; }
+.slider-wrap .thumbnail-wrap ul{ text-align:center }
+.slider-wrap .thumbnail-wrap ul:after{content: "."; visibility: hidden; display: block; height: 0; clear: both;}
+.slider-wrap .thumbnail-wrap li{ display:inline-block; opacity:0.5 }
+.slider-wrap .thumbnail-wrap li.active, .slider-wrap .thumbnail-wrap li.on, .slider-wrap .thumbnail-wrap li:hover{ opacity:1 }
+.slider-wrap .thumbnail-wrap li.active img{ border: 1px solid #f00;}
+.slider-wrap .thumbnail-wrap a{ display: block;padding:5px }
+.slider-wrap .thumbnail-wrap img{ width:100% }
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="slider-wrap" style="height:250px;width:600px;">
+    <div class="slider" id="still_motion">
+    	<button type="button" class="btn-play">자동 넘기기 시작</button>
+        <div class="item-wrap">
+        	<button type="button" class="">첫번째 이미지</button>
+            <div class="item">
+                <img src="../images/front/ralling_1.png" alt="첫번째 이미지" />
+            </div>
+        </div>
+        <div class="item-wrap">
+        	<button type="button" class="">두번째 이미지</button>
+            <div class="item">
+                <img src="../images/front/ralling_2.png" alt="두번째 이미지" />
+            </div>
+        </div>
+        <div class="item-wrap">
+        	<button type="button" class="">세번째 이미지</button>
+            <div class="item">
+                <img src="../images/front/ralling_3.png" alt="세번째 이미지" />
+            </div>
+        </div>
+        <button type="button" class="btn-prev">이전 페이지 이동</button>
+        <button type="button" class="btn-next">다음 페이지 이동</button>
+    </div>
+    <div class="thumbnail-wrap">
+        <ul>
+            <li>
+                <a href="#"><img src="../images/front/ralling_1.png" alt="첫번째 썸네일 이미지"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/front/ralling_2.png" alt="두번째 썸네일 이미지"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/front/ralling_3.png" alt="세번째 썸네일 이미지"/></a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- <script type="text/javascript" src="../statics/scripts/jquery/jquery-1.11.2.min.js"></script> -->
+<!-- <script type="text/javascript" src="../statics/scripts/jquery/jquery-1.9.0.min.js"></script> -->
+<script type="text/javascript" src="../js/front/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/front/jquery/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/front/jquery/plugin/jquery.package.js"></script>
+<script type="text/javascript" type="text/javascript">
+
+$(function(){
+    $('#still_motion').visualMotion();
+});
+</script>
+</body>
+</html>

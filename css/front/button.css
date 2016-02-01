@@ -1,0 +1,94 @@
+/* Anchor buttonA */
+/* btnA */
+a.buttonA,
+a.buttonA span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnA.gif) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;margin-right:8px;*vertical-align:top;}
+a.buttonA{padding:0;background-position:left top;overflow:visible;}
+a.buttonA span{left:15px;padding:6px 15px 6px 0; color:#fff;height:14px;line-height:14px;background-position:right top; font-weight:bold;}
+body.ie9 a.buttonA span{padding-top:7px;}
+
+/* Control buttonA + Submit buttonA */
+span.inputBtnA,
+span.inputBtnA input{position:relative;top:0;display:inline-block;border:0;white-space:nowrap;background:url(../../images/front/button/btnA.gif) no-repeat;vertical-align:middle;margin-right:10px;}
+span.inputBtnA,
+span.inputBtnA input{padding:0;background-position:left top;*left:10px;*padding:6px 10px 5px 0;}
+span.inputBtnA input{background-position:right top;top:0px;cursor:pointer;left:14px;padding:5px 14px 5px 0;font:12px/16px;font-weight:bold;color:#fff;letter-spacing:-1px}
+body.ie9 span.inputBtnA input{left:15px;padding:7px 15px 5px 0;}
+
+/* Control buttonA + Submit buttonB*/
+span.inputBtnB,
+span.inputBtnB input,
+span.inputBtnC,
+span.inputBtnC input {position:relative;top:0;display:inline-block;border:0;white-space:nowrap;background:url(../../images/front/button/btnB.png) no-repeat; margin-right:10px;}
+span.inputBtnB,
+span.inputBtnB input,
+span.inputBtnC {padding:0;background-position:left top;*left:10px;}
+span.inputBtnB input {background-position:right top;top:0px;cursor:pointer;left:12px;padding:4px 12px 5px 0;font-weight:bold;color:#fff;letter-spacing:-1px; line-height:15px;}
+span.inputBtnC input {top:0; left:1px; width:49px; margin:0; padding:4px 0 5px; background-position:100% 0; color:#fff; font-weight:bold; letter-spacing:-1px; line-height:15px; text-align:center;}
+
+
+/* TypeB */
+a.buttonB,
+a.buttonB span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnB.png) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;margin-right:8px;}
+a.buttonB {padding:0;background-position:left top;overflow:visible;}
+a.buttonB span {display:inline-block;left:14px;width:72px;padding:4px 14px 5px 0;color:#fff;font:100%/12px;background-position:right top; line-height:17px;}
+body.ie9 a.buttonB span{line-height:20px;}
+
+
+/* layer */
+#layerPopTrigger_2,
+#layerPopTrigger_2 span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnB.png) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;margin-right:8px;}
+#layerPopTrigger_2 {padding:0;background-position:left top;overflow:visible;}
+#layerPopTrigger_2 span {display:inline-block;left:14px;width:72px;padding:4px 14px 5px 0;color:#fff;font:100%/12px;background-position:right top; line-height:17px;}
+body.ie9 #layerPopTrigger_2 span{line-height:20px;}
+
+
+/* TypeBasic */
+a.btnBasic,
+a.btnBasic span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnB.png) no-repeat;cursor:pointer;	white-space:nowrap;	vertical-align:middle;*vertical-align:top;	margin-right:5px;	background-image: url(../../images/front/button/btnB.png);}
+a.btnBasic {padding:0;background-position:left top;overflow:visible;}
+a.btnBasic span{display:inline-block;left:10px;padding:4px 10px 4px 0;color:#fff;font:100%/12px;background-position:right top;}
+body.ie9 a.btnBasic span{line-height:20px;}
+body.ie8 a.btnBasic span{line-height:18px;}
+
+/* buttonBig */
+a.buttonBig,
+a.buttonBig span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnB.png) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;margin-right:8px;}
+a.buttonBig {padding:0;background-position:left top;overflow:visible;}
+a.buttonBig span{display:inline-block;left:14px;width:182px;padding:4px 14px 4px 0;color:#fff;font:100%/12px;background-position:right top;}
+
+/* TypeC */
+a.buttonC,
+a.buttonC strong,
+a.buttonC span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnC.gif) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;margin-left:8px;}
+a.buttonC {padding:0;background-position:left top;overflow:visible;}
+
+a.buttonC strong{display:inline-block;left:3px;padding:6px 19px 5px 6px;*padding-left:16px;line-height:14px;color:#fff;background-position:right top;}
+a.buttonC span{left:3px;padding:6px 19px 5px 6px;*padding:6px 15px 5px 13px;line-height:14px;color:#fff;background-position:right top;}
+a.buttonC strong,a.buttonC span{*margin-right:-8px;}
+body.ie9 a.buttonC span,body.ie9 a.buttonC strong{line-height:18px;}
+body.ie9 .topBbs .btnArea.floatR a.buttonC span{height:14px;}
+
+/* TypeD */
+a.buttonD,
+a.buttonD span{display:inline-block;margin-left:1px;text-decoration:none !important;background:url(../../images/front/button/btnD.gif) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;}
+/*position:relative;*/
+a.buttonD {padding:0;background-position:left top;overflow:visible;}
+a.buttonD span {display:inline-block; padding:0 12px; line-height:25px; color:#606060;background-position:right top; text-align:center;}/*ie9*/
+body.ie9 a.buttonD span{line-height:18px}
+
+/* TypeE */
+a.buttonE,
+a.buttonE span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnE.gif) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;}
+a.buttonE {padding:0;background-position:left top;overflow:visible;}
+a.buttonE span{display:inline-block;left:8px;width:21px;line-height:12px;padding:4px 12px 4px 0;color:#606060;font:11px;font-family:Dotum,"����";background-position:right top;}
+
+
+/* TypeF */
+a.buttonF,
+a.buttonF span{position:relative;display:inline-block;text-decoration:none !important;background:url(../../images/front/button/btnE.gif) no-repeat;cursor:pointer;white-space:nowrap;vertical-align:middle;*vertical-align:top;}
+a.buttonF {padding:0;background-position:left top;overflow:visible;}
+a.buttonF span{display:inline-block;left:8px;width:21px;line-height:12px;padding:4px 12px 4px 0;color:#606060;font:11px;font-family:Dotum,"����";background-position:right top;}
+
+/* Offset Debug */
+a.buttonA,
+span.buttonA{ margin-right:16px; margin-top:-1px;}

@@ -1,0 +1,39 @@
+/* wingBanner */
+.wingWrap p { }
+.wingWrap p.user { height:80px !important; padding:0 7px !important;}
+.wingWrap p.user span { display:block; padding-top:20px;}
+.wingWrap p.user.type2 span { padding-top:15px;}
+
+#useCount .Popup,
+#sendCount .Popup { background:none; background-color:#fff; border:1px solid #c3c3c7;}
+#useCount .Popup .Inner,
+#sendCount .Popup .Inner { padding:15px 10px 10px 10px;}
+#useCount .Popup .popupTitle,
+#sendCount .Popup .popupTitle { margin-bottom:10px;}
+#useCount .tail,
+#sendCount .tail { position:absolute; right:-21px; top:10px; width:22px; height:21px; background:#fff url("../../images/front/wing/arrow.png") no-repeat left top; z-index:2;}
+#useCount .popupTitle .popClose,
+#sendCount .popupTitle .popClose { top: 15px; right: 12px;}
+
+/* popup : notice */
+.popWrap.type2 { }
+.popWrap.type2 .outerBody h1 { height:42px; padding:0 20px; background:#f43193 url("../../images/front/popup/bg0_left.gif") no-repeat left top; border:0 none;}
+.popWrap.type2 .outerBody h1 span { display:block; height:42px; line-height:42px; font-size:16px; color:#fff; background:url("../../images/front/popup/bg0_right.gif") no-repeat right top;}
+.popWrap.type2 .innerBody { height:305px; border:1px solid #afafb4; border-top:2px solid #7b7b7b; border-bottom:0 none; overflow-x:hidden; overflow-y:scroll;}
+.popWrap.type2 .innerBody .textWrap { padding:30px 25px;}
+.popWrap.type2 .footer { padding:0 15px 0 0; height:29px; line-height:29px; vertical-align:middle; background-color:#f0f0f2; text-align:right; border:1px solid #afafb4; border-top:0 none;}
+.popWrap.type2 .footer * { display:inline-block; vertical-align:middle; color:#686868; font-size:11px;}
+.popWrap.type2 .footer a span { vertical-align:top; margin-top:2px;}
+
+/* errorWrap */
+.errorWrap { position:relative; width:500px; height:303px; margin:125px auto 70px; border-top:2px solid #adadb2; border-bottom:1px solid #c5c5c5; background:url("../../images/front/common/bgError.gif") no-repeat center top; text-align:center;}
+.errorWrap .tit { padding:156px 0 0;}
+.errorWrap .txt0 { padding:25px 0 0;}
+
+/* leftBanner */
+.banner { margin-top:10px; }
+
+/* index Banner */
+.visualRoll .banner01 { top:20px;}/* [20141111_수정] top:30px */
+.visualRoll .banner02 { top:20px;}/* [20141111_수정] top:30px */
+.visualRoll .banner03 { top:20px;}/* [20141111_수정] top:30px */
